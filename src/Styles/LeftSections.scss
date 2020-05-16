@@ -1,9 +1,10 @@
+$primary:#3366FF;
 .left-section{
     height: 100vh;
-    background-color: yellow;
-    background-image: url('../Assets/photo-1501163268664-3fdf329d019f.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: $primary;
     background-size: cover;
+    h1{
+        font-size: 4rem;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
 }
