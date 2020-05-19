@@ -2,20 +2,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router } from 'react-router'
 import { Provider } from 'react-redux'
 import './index.css'
 import './App.scss'
 import { App } from './App'
 import * as serviceWorker from './serviceWorker'
 
-import history from './Utils/History'
+
 import createStore from './Redux/store'
 ReactDOM.render(
   <Provider store={createStore}>
-    <Router history={history}>
-      <App />
-    </Router>
+    <App />
   </Provider>,
   document.getElementById('root')
 )

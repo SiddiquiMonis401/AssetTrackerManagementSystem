@@ -1,5 +1,6 @@
 import React from 'react'
 import * as yup from 'yup'
+import { useDispatch } from 'react-redux'
 
 import FormikFormBuilder from './Common/FormikFormBuilder'
 import LeftSection from '../Common/LeftSection'
@@ -7,6 +8,7 @@ import RightSection from '../Common/RightSection'
 import LinkWithMessage from '../Common/LinkWithMessage'
 
 function Login (props) {
+  const dispatch = useDispatch()
   const ComponentAfterButton = (
     <LinkWithMessage msg="Don't have an account ? " to='/' />
   )
@@ -29,6 +31,7 @@ function Login (props) {
       console.log(value)
       setSubmitting(false)
       resetForm({})
+      dispatch({ type: 'Log_in' })
     }
   }
   const fieldPropsArray = [

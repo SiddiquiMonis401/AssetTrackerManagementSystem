@@ -1,16 +1,18 @@
 import React from 'react';
-import { Switch, Route } from 'react-router';
-import Signup from '../Components/Signup';
-import ForgotPassword from '../Components/ForgotPassword';
-import Login from '../Components/Login';
-function PublicRoutes(props) {
+import { useSelector } from 'react-redux';
+import { Redirect, Route } from 'react-router-dom';
+
+function PublicRoutes({component:Component}) {
+    const  { loggedIn } = useSelector(state => state.LoggedReducers);
     return (
-        <Switch>
-            <Route exact path="/" component={Signup} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/Forgotpassword" component={ForgotPassword} /> 
-                
-        </Switch>
+        <Route component={(props) => (
+            <>
+            {
+            !loggedIn ? <Component {...props} />  : <Redirect to="/dashboard" />
+            }
+            </>
+        )} />
+        
     );
 }
 

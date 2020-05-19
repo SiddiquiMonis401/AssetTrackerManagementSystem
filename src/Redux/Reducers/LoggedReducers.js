@@ -1,7 +1,7 @@
-export default function LoggedReducers(state=0,action){
+export default function LoggedReducers(state={loggedIn:false},action){
     switch(action.type){
-        case 'loggedin':{
-            return state+1;
+        case 'Log_in':{
+            return {...state,loggedIn:true}
         }
         default:{
             return state;

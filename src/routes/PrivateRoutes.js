@@ -1,10 +1,18 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { Redirect, Route } from 'react-router-dom';
 
-function PrivateRoutes(props) {
+function PrivateRoutes({component:Component}) {
+    const  { loggedIn } = useSelector(state => state.LoggedReducers);
     return (
-        <div>
-            
-        </div>
+        <Route component={(props) => (
+            <>
+            {
+            loggedIn ? (<Component {...props} />)  : (<Redirect to="/" />)
+            }
+            </>
+        )} />
+        
     );
 }
 

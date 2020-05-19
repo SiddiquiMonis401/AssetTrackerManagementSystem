@@ -9,7 +9,7 @@ import LinkWithMessage from '../Common/LinkWithMessage'
 
 function ForgotPassword (props) {
   const ComponentAfterButton = (
-    <LinkWithMessage msg='Go back to signin' to='/Login' />
+    <LinkWithMessage msg='Go back to signin' to='/' />
   )
   const formikInitialProps = {
     initialValues: {

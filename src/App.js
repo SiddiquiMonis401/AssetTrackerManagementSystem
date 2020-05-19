@@ -1,15 +1,15 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import './App.scss';
-import PrivateRoutes from './routes/PrivateRoutes';
-import PublicRoutes from './routes/PublicRoutes';
-import store from './Redux/store';
-import { createStore } from 'redux';
 
+
+import './App.scss';
+import Routes from './routes';
 
 export function App() {
   return (
-    <PublicRoutes />
+    <div className="App">
+     <Routes />
+    </div>
+    
   );
 }
 
