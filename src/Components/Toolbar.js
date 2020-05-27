@@ -1,7 +1,6 @@
 import React from 'react'
 
 import ToggleButton from './SideDrawer/ToggleButton'
-import logo from '../Assets/images.jpg'
 import '../Styles/Toolbar.scss'
 function Toolbar (props) {
   return (

@@ -1,0 +1,15 @@
+.assets_page{
+    
+    box-shadow: 5px 10px 10px  10px rgba(0,0,0,0.3);
+    background-color: 	#F8F8F8;
+    margin: 100px;
+    height: 80%;
+    width: 90%;
+    .assets_list{
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+    }
+    .assets_header{
+        background-color: #3388ff;
+        color: white;
+    }
+}

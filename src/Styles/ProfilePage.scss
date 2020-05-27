@@ -1,0 +1,45 @@
+.profile_page{
+    
+    box-shadow: 5px 10px 10px  10px rgba(0,0,0,0.3);
+    background-color: 	#F8F8F8;
+    margin: 100px;
+    height: 80%;
+    width: 90%;
+
+}
+.profile_header{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    
+    padding: 1rem 2rem;
+}
+
+.profile_displayer{
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.profile_image_with_bio{
+    margin-top: 2px;
+    border-right: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+
+    height: 90vh;
+    img{
+        height: 400px;
+        width: 100%;
+    }
+    div{
+        border-top: 1px solid black;
+    }
+
+}
+
+.profile_details_editable{
+    margin-top: 100px;
+    border:1px dotted  rgba(0,0,0,0.5);
+
+}

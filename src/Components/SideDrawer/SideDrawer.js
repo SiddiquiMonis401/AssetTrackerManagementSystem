@@ -1,5 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+//styles
 import './SideDrawer.scss'
+
+//Components
+import ToggleButton from './ToggleButton'
+
 function SideDrawer (props) {
   let drawerClass = 'side__drawer'
   if (props.isOpen) {
@@ -9,15 +16,14 @@ function SideDrawer (props) {
     <div className={drawerClass}>
       <div className='side__drawer__header'>
         <div>Logo</div>
-        <button onClick={props.handleToggle}>x</button>
+        <ToggleButton
+          handleToggle={props.handleToggle}
+          renderedIn='side_drawer'
+        />
       </div>
-      <div className='divider' />
-      <div className='nav__items'>
-        {['Home', 'About', 'Message', 'Contacts'].map(items => (
-          <div className='nav__links'>
-            {items}
-            <div className='divider' />
-          </div>
+      <div className='nav__items '>
+        {['Profile', 'Location', 'Vednors', 'Assets'].map(items => (
+          <Link className='nav__links'>{items}</Link>
         ))}
       </div>
     </div>
