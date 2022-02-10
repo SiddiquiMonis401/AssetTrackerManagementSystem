@@ -10,7 +10,7 @@
     "emotion": "^10.0.27",
     "formik": "^2.1.4",
     "icons": "^1.0.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-avatar": "^3.9.3",
     "react-bootstrap": "^1.0.1",
