@@ -10,7 +10,7 @@
     "emotion": "^10.0.27",
     "formik": "^2.1.4",
     "icons": "^1.0.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-avatar": "^3.9.3",
     "react-bootstrap": "^1.0.1",
@@ -18,7 +18,7 @@
     "react-icon": "^1.0.0",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "yup": "^0.28.4"
   },
   "scripts": {
